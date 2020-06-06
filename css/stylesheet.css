@@ -67,3 +67,8 @@ body {
 #projects ul li {
   padding-right: 2rem;
 }
+
+.project-img {
+  width: 353px;
+  height: 233px;
+}
