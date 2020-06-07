@@ -56,8 +56,8 @@ body {
 
 .projectsGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 320px 320px;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 320px 320px; */
 }
 #projects {
   height: 100vh;
@@ -75,5 +75,6 @@ body {
 
 .project-img {
   width: 353px;
-  height: 233px;
+  height: auto;
+  border: 1rem solid #fff;
 }
