@@ -80,7 +80,8 @@ body {
 .project-img {
   width: 353px;
   height: auto;
-  border: 1rem solid #fff;
+  margin: 1rem;
+  border: 1px solid #040108;
 }
 #rightArrow {
   position: absolute;
