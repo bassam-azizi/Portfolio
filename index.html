@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1200px"
+      href="css/mediaQuery.css"
+    />
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <title>Bassem Azizi</title>
   </head>
@@ -23,99 +28,108 @@
       <img id="featured-img" src="" alt="" />
     </section>
     <section id="projects">
-      <h2>Last work</h2>
-      <ul>
-        <li class="work-nav" id="all">All</li>
+      <!-- <ul>
+        <li class="work-nav" id="all">Projects</li>
         <li class="work-nav" id="fed">Front-end Technologies</li>
         <li class="work-nav" id="fst">Full-stack Technologies</li>
         <li class="work-nav" id="ux">UX/UI Design</li>
-      </ul>
-      <div class="projects_slider">
-        <a class="project-tile">
-          <img
-            src="assets/technicalPage.jpg"
-            class="project-img"
-            alt="technical page web site"
-          />
-          <p></p>
-        </a>
-        <a class="project-tile">
-          <img
-            src="assets/trombone.jpg"
-            alt="trombone product landing page web site"
-            class="project-img"
-          />
-          <p></p>
-        </a>
-        <a class="project-tile">
-          <img
-            src="assets/filmReview.jpg"
-            alt=" film review page web site"
-            class="project-img"
-          />
-          <p></p>
-        </a>
-        <a class="project-tile">
-          <img
-            src="assets/matchingGame.jpg"
-            alt="Frogger game web site page"
-            class="project-img"
-          />
-          <p></p>
-        </a>
-        <a class="project-tile">
-          <img
-            src="assets/restaurantReview.jpg"
-            alt="Restaurant review web site page"
-            class="project-img"
-          />
-          <p></p>
-        </a>
-        <a class="project-tile">
-          <img
-            src="assets/udaciFeeds.jpg"
-            alt="udaciFeeds RSS feed tested through jasmine page website"
-            class="project-img"
-          />
-          <p></p>
-        </a>
-        <a class="project-tile">
-          <img
-            src="assets/stanislavPetrov.jpg"
-            alt="stanislav petrov tribute page"
-            class="project-img"
-          />
-          <p></p>
-        </a>
-        <a class="project-tile ">
-          <img
-            src="assets/quizApp.jpg"
-            alt="quizApp website page"
-            class="project-img"
-          />
-        </a>
-        <a class="project-tile">
-          <img
-            src="assets/frogger.jpg"
-            alt="Frogger game web site page"
-            class="project-img"
-          />
-          <p></p>
-        </a>
-        <!-- <div id="iconify"> -->
-          <span
-            class="iconify"
-            id="leftArrow"
-            data-icon="dashicons-arrow-left-alt2"
-            data-inline="false"
-          ></span>
-          <span
-            class="iconify"
-            id="rightArrow"
-            data-icon="dashicons-arrow-right-alt2"
-            data-inline="false"
-          ></span>
-        <!-- </div> -->
+      </ul> -->
+      <div class="projects_slide">
+        <div class="project-tile">
+          <a href="" class="projectItem">
+            <img
+              src="assets/technicalPage.jpg"
+              class="project-img"
+              alt="technical page web site"
+            />
+            <p></p>
+          </a>
+          <a href="" class="projectItem">
+            <img
+              src="assets/trombone.jpg"
+              alt="trombone product landing page web site"
+              class="project-img"
+            />
+            <p></p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="" class="projectItem">
+            <img
+              src="assets/filmReview.jpg"
+              alt=" film review page web site"
+              class="project-img"
+            />
+            <p></p>
+          </a>
+          <a href="" class="projectItem">
+            <img
+              src="assets/matchingGame.jpg"
+              alt="Frogger game web site page"
+              class="project-img"
+            />
+            <p></p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="" class="projectItem">
+            <img
+              src="assets/restaurantReview.jpg"
+              alt="Restaurant review web site page"
+              class="project-img"
+            />
+            <p></p>
+          </a>
+          <a href="" class="projectItem">
+            <img
+              src="assets/udaciFeeds.jpg"
+              alt="udaciFeeds RSS feed tested through jasmine page website"
+              class="project-img"
+            />
+            <p></p>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="" class="projectItem">
+            <img
+              src="assets/stanislavPetrov.jpg"
+              alt="stanislav petrov tribute page"
+              class="project-img"
+            />
+            <p></p>
+          </a>
+          <a href="" class="projectItem">
+            <img
+              src="assets/quizApp.jpg"
+              alt="quizApp website page"
+              class="project-img"
+            />
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="" class="projectItem">
+            <img
+              src="assets/frogger.jpg"
+              alt="Frogger game web site page"
+              class="project-img"
+            />
+            <p></p>
+          </a>
+        </div>
+      </div>
+      <!-- <div id="iconify"> -->
+      <!-- <span
+        class="iconify"
+        id="leftArrow"
+        data-icon="dashicons-arrow-left-alt2"
+        data-inline="false"
+      ></span>
+      <span
+        class="iconify"
+        id="rightArrow"
+        data-icon="dashicons-arrow-right-alt2"
+        data-inline="false"
+      ></span> -->
     </section>
     <section id="contact">
       <h3></h3>
@@ -126,10 +140,12 @@
         <a href="" id="profile-link">Twitter</a>
       </div>
     </section>
-    <footer><ul>
-      <li>Privacy</li>
-      <li>All right are reserved</li>
-    </ul></footer>
-    <script src="js/index.js"></script>
+    <footer>
+      <ul>
+        <li>Privacy</li>
+        <li>All right are reserved</li>
+      </ul>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
