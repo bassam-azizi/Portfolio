@@ -4,13 +4,17 @@ const projects_items = document.querySelectorAll('.projectItem');
 const projects = Array.from(projects_items);
 const margin = 30;
 
+const rightArrow = document.getElementById('rightArrow');
+const leftArrow = document.getElementById('leftArrow');
+
 let items = 0;
-let itemsWidth = 0;
+let projectsTotalWidth = 0;
+let columns;
 
 const responsive = [
-    { breakpoint: { width: 0, item: 1 } },
-    { breakpoint: { width: 600, item: 2 } },
-    { breakpoint: { width: 1200, item: 3 } }
+    { breakpoint: { width: 0, item: 1, flex: 'column' } },
+    { breakpoint: { width: 600, item: 2, flex: 'row' } },
+    { breakpoint: { width: 1200, item: 3, flex: 'row' } }
 ];
 
 function load() {
@@ -21,14 +25,39 @@ function load() {
     }
     start();
 }
-
+let projectWidth;
+let slideWidth;
 function start() {
-    let project_width = (project_slide_width / items) - margin;
+    projectWidth = (project_slide_width / items) - margin;
     projects.forEach(element => {
-        element.style.cssText = "width:" + project_width + "px; margin: " + (margin / 2) + "px";
+        element.style.cssText = "width:" + projectWidth + "px; margin: " + (margin / 2) + "px";
+        projectsTotalWidth += projectWidth + margin;
     });
+    if (window.innerWidth <= 600) columns = Math.ceil((projectsTotalWidth / projectWidth));
+
+    if (window.innerWidth > 600) columns = Math.ceil((projectsTotalWidth / projectWidth)) / 2;
 
 }
+
+let counter = 0;
+function slide_right() {
+    slideWidth = columns * (projectWidth + (margin / 2));
+
+    if (counter >= (columns - items)) return;
+    counter++;
+    project_slide.style.marginLeft = (-projectWidth * counter) + 'px';
+
+}
+
+rightArrow.addEventListener('click', slide_right, false)
+
+function slide_left() {
+    if (project_slide.style.marginLeft === "") return;
+    if (project_slide.style.marginLeft === "0px") return;
+    counter--;
+    project_slide.style.marginLeft = (-projectWidth * counter) + 'px';
+}
+leftArrow.addEventListener('click', slide_left, false);
 
 
 
