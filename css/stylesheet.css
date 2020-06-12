@@ -60,6 +60,7 @@ body {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  transition: all ease 1s;
 }
 #projects ul {
   list-style: none;
@@ -85,17 +86,20 @@ body {
 }
 #rightArrow {
   position: absolute;
-  right: -2em;
-  top: 3em;
+  right: -1em;
+  top: 2em;
   font-size: 8em;
   cursor: pointer;
+  color: rgb(119, 153, 8);
 }
 #leftArrow {
   position: absolute;
-  left: -2em;
-  top: 3em;
+  left: -1em;
+  top: 2em;
   font-size: 8em;
+  font-weight: 100;
   cursor: pointer;
+  color: rgb(119, 153, 8);
 }
 
 /* ___________________ FOOTER ____________________ */
