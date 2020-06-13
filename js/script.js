@@ -12,9 +12,9 @@ let projectsTotalWidth = 0;
 let columns;
 
 const responsive = [
-    { breakpoint: { width: 0, item: 1, flex: 'column' } },
-    { breakpoint: { width: 600, item: 2, flex: 'row' } },
-    { breakpoint: { width: 1200, item: 3, flex: 'row' } }
+    { breakpoint: { width: 0, item: 1 } },
+    { breakpoint: { width: 600, item: 2 } },
+    { breakpoint: { width: 1200, item: 3 } }
 ];
 
 function load() {
@@ -28,6 +28,7 @@ function load() {
 let projectWidth;
 let slideWidth;
 function start() {
+    console.log(items);
     projectWidth = (project_slide_width / items) - margin;
     projects.forEach(element => {
         element.style.cssText = "width:" + projectWidth + "px; margin: " + (margin / 2) + "px";
@@ -45,19 +46,21 @@ function slide_right() {
 
     if (counter >= (columns - items)) return;
     counter++;
-    project_slide.style.marginLeft = (-projectWidth * counter) + 'px';
+    // project_slide.style.marginLeft = ((-projectWidth * counter) - margin) + 'px';
+    project_slide.style.transform = 'translateX(' + (-(projectWidth + margin) * counter) + 'px)';
 
 }
 
-rightArrow.addEventListener('click', slide_right, false)
+// rightArrow.addEventListener('click', slide_right, false);
 
 function slide_left() {
-    if (project_slide.style.marginLeft === "") return;
-    if (project_slide.style.marginLeft === "0px") return;
+    // if (project_slide.style.marginLeft === "") return;
+    // if (project_slide.style.marginLeft === "0px") return;
     counter--;
-    project_slide.style.marginLeft = (-projectWidth * counter) + 'px';
+    // project_slide.style.marginLeft = (-projectWidth * counter) + 'px';
+    project_slide.style.transform = 'translateX(' + (-(projectWidth + margin) * counter) + 'px)';
 }
-leftArrow.addEventListener('click', slide_left, false);
+// leftArrow.addEventListener('click', slide_left, false);
 
 
 
