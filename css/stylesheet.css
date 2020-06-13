@@ -51,15 +51,26 @@ body {
 }
 /* --------          WORKING WITH PROJECTS SECTION AND IT'S SLIDER     ---------------------*/
 #projects {
-  width: 85%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
+  position: static;
+  padding: auto;
   position: relative;
+  /* z-index: 1000;
+  background: red; */
+}
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .projects_slide {
-  min-width: 100%;
+  /* min-width: 1700px; */
+  /* white-space: pre-line; */
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: row;
-  overflow: hidden;
   transition: all ease 1s;
 }
 #projects ul {
@@ -77,29 +88,29 @@ body {
 .project-tile {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  /* align-content: center; */
 }
 
 .project-img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 4em;
+  transform: translate(50%);
+  cursor: pointer;
+  color: rgb(119, 153, 8);
+  font-family: "Courier New", Courier, monospace;
+  z-index: 1000;
 }
 #rightArrow {
-  position: absolute;
-  right: -1em;
-  top: 2em;
-  font-size: 8em;
-  cursor: pointer;
-  color: rgb(119, 153, 8);
+  right: 0.5rem;
 }
 #leftArrow {
-  position: absolute;
-  left: -1em;
-  top: 2em;
-  font-size: 8em;
-  font-weight: 100;
-  cursor: pointer;
-  color: rgb(119, 153, 8);
+  left: 0.5rem;
 }
 
 /* ___________________ FOOTER ____________________ */
