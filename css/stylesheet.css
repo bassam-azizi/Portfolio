@@ -57,8 +57,6 @@ body {
   position: static;
   padding: auto;
   position: relative;
-  /* z-index: 1000;
-  background: red; */
 }
 #wrapper {
   width: 80%;
@@ -66,12 +64,11 @@ body {
   overflow: hidden;
 }
 .projects_slide {
-  /* min-width: 1700px; */
-  /* white-space: pre-line; */
+  transition: left cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.2s;
+  position: relative;
+  left: 0;
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
-  transition: all ease 1s;
 }
 #projects ul {
   list-style: none;
@@ -88,7 +85,6 @@ body {
 .project-tile {
   display: flex;
   flex-direction: column;
-  /* align-content: center; */
 }
 
 .project-img {
@@ -111,6 +107,8 @@ body {
 }
 #leftArrow {
   left: 0.5rem;
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 /* ___________________ FOOTER ____________________ */
