@@ -86,11 +86,38 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.projectItem {
+  position: relative;
+}
+.projectItem p {
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  right: 50%;
+  transform: translate(50%);
+  transition: all ease 1s;
+}
+.projectItem p:hover {
+  opacity: 1;
+}
 .project-img {
+  /* position: relative; */
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+.project-img:hover {
+  position: relative;
+  object-fit: cover;
+  width: 97%;
+  box-shadow: -1px 0px 19px -8px rgba(0, 0, 0, 0.64);
+  border: 1px groove grey;
+  /* box-shadow: none; */
+  /* height: 80%; */
+
+  /* transform: translateY(3px); */
 }
 .arrow {
   position: absolute;
