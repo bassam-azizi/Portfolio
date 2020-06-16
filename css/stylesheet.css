@@ -17,7 +17,7 @@ body {
 }
 
 #navBar ul {
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +48,49 @@ body {
   letter-spacing: 0.1em;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+/* THE ABOUTME SECTION */
+#aboutMe {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.part {
+  /* display: grid;
+  grid-template-columns: 25% 70%; */
+  position: relative;
+  height: 25vh;
+  width: 100%;
+}
+.square {
+  width: 25%;
+  height: 25vh;
+  background-color: #cfcfcf32;
+  border: 1px solid #cfcfcf17;
+  color: #415279;
+  margin: 1.5em;
+  position: relative;
+}
+.p1 {
+  align-self: flex-end;
+}
+.p2 {
+  align-self: center;
+}
+.p3 {
+  align-self: flex-start;
+}
+.square p {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%);
+}
+.part article {
+  position: absolute;
 }
 /* --------          WORKING WITH PROJECTS SECTION AND IT'S SLIDER     ---------------------*/
 #projects {
