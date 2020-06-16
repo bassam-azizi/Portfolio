@@ -62,6 +62,7 @@ body {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
+  box-shadow: -1px 0px 12px -8px rgba(0, 0, 0, 0.64);
 }
 .projects_slide {
   transition: left cubic-bezier(0.6, -0.28, 0.735, 0.045) 1.2s;
@@ -88,8 +89,10 @@ body {
 }
 .projectItem {
   position: relative;
+  border-radius: 4px;
 }
 .projectItem p {
+  color: #fff;
   opacity: 0;
   position: absolute;
   top: 45%;
@@ -112,8 +115,7 @@ body {
   position: relative;
   object-fit: cover;
   width: 97%;
-  box-shadow: -1px 0px 19px -8px rgba(0, 0, 0, 0.64);
-  border: 1px groove grey;
+  /* border: 1px groove grey; */
   /* box-shadow: none; */
   /* height: 80%; */
 
