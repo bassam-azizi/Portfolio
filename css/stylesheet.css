@@ -52,45 +52,60 @@ body {
 
 /* THE ABOUTME SECTION */
 #aboutMe {
-  width: 80%;
-  height: 100vh;
+  width: 90%;
+  height: 99vh;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto;
 }
-.part {
-  /* display: grid;
-  grid-template-columns: 25% 70%; */
+.container {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  height: 25vh;
+  height: 256px;
   width: 100%;
 }
 .square {
-  width: 25%;
-  height: 25vh;
+  width: 306px;
+  height: 100%;
   background-color: #cfcfcf32;
   border: 1px solid #cfcfcf17;
   color: #415279;
   margin: 1.5em;
   position: relative;
 }
-.p1 {
-  align-self: flex-end;
+.whyACSD {
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.p2 {
+.whyACSD .square {
+  justify-self: flex-end;
+}
+.whyACSD p {
+  width: 50%;
+}
+.services {
+  align-items: center;
+  justify-content: center;
+}
+.services .square {
   align-self: center;
 }
-.p3 {
+.services p {
+  line-height: 120;
+}
+.whyMe {
+  align-items: center;
+  justify-content: flex-start;
+}
+.whyMe .square {
   align-self: flex-start;
 }
-.square p {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%);
+.whyMe p {
+  width: 50%;
 }
-.part article {
-  position: absolute;
+.container p {
+  align-self: center;
 }
 /* --------          WORKING WITH PROJECTS SECTION AND IT'S SLIDER     ---------------------*/
 #projects {
