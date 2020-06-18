@@ -65,6 +65,13 @@ body {
   height: 256px;
   width: 100%;
 }
+.container article {
+  font-family: Roboto;
+  color: #415279;
+  font-weight: 100;
+  line-height: 1.7em;
+  letter-spacing: 2px;
+}
 .square {
   width: 306px;
   height: 100%;
@@ -72,34 +79,44 @@ body {
   /* border: 1px solid #cfcfcf17; */
   border: 2px solid #e9e9e9;
   color: #415279;
-  margin: 1.5em;
+  margin: 0 1.5em;
   /* position: relative; */
   display: flex;
   flex-direction: column;
+}
+.square p {
+  padding: 1em;
 }
 .squareHeader {
   background-color: #fff;
   height: 52%;
 }
+.squareHeader span {
+  display: block;
+  margin-left: 2em;
+  /* text-align: center; */
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 4em;
+  line-height: 2;
+  white-space: nowrap;
+  /* width: 300px;
+   */
+  overflow: hidden;
+}
 .whyACSD {
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 }
 .whyACSD .square {
   justify-self: flex-end;
 }
-.whyACSD p {
+.whyACSD article {
   width: 50%;
 }
 .services {
   align-items: center;
   justify-content: center;
-}
-/* .services .square {
-  align-self: center;
-} */
-.services p {
-  line-height: 1;
 }
 .whyMe {
   align-items: center;
@@ -108,11 +125,8 @@ body {
 .whyMe .square {
   align-self: flex-start;
 }
-.whyMe p {
+.whyMe article {
   width: 50%;
-}
-.container p {
-  align-self: center;
 }
 /* --------          WORKING WITH PROJECTS SECTION AND IT'S SLIDER     ---------------------*/
 #projects {
