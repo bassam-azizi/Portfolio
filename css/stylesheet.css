@@ -66,8 +66,8 @@ body {
   width: 100%;
 }
 .container article {
-  font-family: Roboto;
-  color: #415279;
+  font-family: "Roboto sans-serif";
+  color: #010209;
   font-weight: 100;
   line-height: 1.7em;
   letter-spacing: 2px;
@@ -76,11 +76,9 @@ body {
   width: 306px;
   height: 100%;
   background-color: #dfdfdf;
-  /* border: 1px solid #cfcfcf17; */
   border: 2px solid #e9e9e9;
   color: #415279;
   margin: 0 1.5em;
-  /* position: relative; */
   display: flex;
   flex-direction: column;
 }
@@ -90,19 +88,25 @@ body {
 .squareHeader {
   background-color: #fff;
   height: 52%;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 2;
 }
 .squareHeader span {
-  display: block;
-  margin-left: 2em;
-  /* text-align: center; */
+  display: inline-block;
   font-family: Roboto;
   text-transform: uppercase;
   font-size: 4em;
-  line-height: 2;
-  white-space: nowrap;
-  /* width: 300px;
-   */
-  overflow: hidden;
+  padding-left: 100%;
+  animation: animate 12s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 .whyACSD {
   justify-content: flex-end;
@@ -183,7 +187,6 @@ body {
   opacity: 1;
 }
 .project-img {
-  /* position: relative; */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -194,11 +197,6 @@ body {
   position: relative;
   object-fit: cover;
   width: 97%;
-  /* border: 1px groove grey; */
-  /* box-shadow: none; */
-  /* height: 80%; */
-
-  /* transform: translateY(3px); */
 }
 .arrow {
   position: absolute;
