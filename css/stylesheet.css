@@ -100,6 +100,7 @@ body {
   -webkit-text-stroke-color: #415279;
   text-transform: uppercase;
   font-size: 4em;
+  text-shadow: 1px 1px 1px #919191, 1px 30px 6px rgba(16, 16, 16, 0.1);
   padding-left: 100%;
   animation: animate 12s linear infinite;
 }
