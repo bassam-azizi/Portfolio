@@ -83,6 +83,8 @@ body {
 }
 .square p {
   padding: 1em;
+  font-family: Roboto;
+  color: #010209;
 }
 .squareHeader {
   background-color: #fff;
@@ -125,6 +127,9 @@ body {
 .services {
   align-items: center;
   justify-content: center;
+}
+.services .square {
+  margin: 0 10%;
 }
 .whyMe {
   align-items: center;
