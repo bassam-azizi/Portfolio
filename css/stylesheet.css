@@ -124,6 +124,7 @@ body {
 .whyACSD article {
   width: 50%;
 }
+/* SERVICES */
 .services {
   align-items: center;
   justify-content: center;
@@ -131,6 +132,14 @@ body {
 .services .square {
   margin: 0 auto;
 }
+/* .arrowLine {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: black;
+} */
 .services article:first-child {
   position: absolute;
   left: 1.5em;
@@ -141,7 +150,34 @@ body {
 }
 .services article p {
   line-height: 2.5rem;
+  text-align: right;
+  padding: 0 4px;
 }
+.services article p::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+}
+/* first part of arrow */
+.services article:first-child p::after {
+  right: -100%;
+  border-radius: 10px;
+}
+.services article:first-child p:first-child::after {
+  transform: skew(15deg, 7deg);
+}
+.services article:first-child p:nth-child(2)::after {
+  transform: translateY(-22px) skewY(-5deg);
+}
+.services article:first-child p:nth-child(3)::after {
+  transform: skewY(-18deg) translateY(-42px);
+}
+/* second part of arrow */
+
+/* WHY ME */
 .whyMe {
   align-items: center;
   justify-content: flex-start;
