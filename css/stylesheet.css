@@ -129,7 +129,18 @@ body {
   justify-content: center;
 }
 .services .square {
-  margin: 0 10%;
+  margin: 0 auto;
+}
+.services article:first-child {
+  position: absolute;
+  left: 1.5em;
+}
+.services article:last-child {
+  position: absolute;
+  right: 1.5em;
+}
+.services article p {
+  line-height: 2.5rem;
 }
 .whyMe {
   align-items: center;
