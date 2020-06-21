@@ -62,49 +62,67 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
-  height: 256px;
-  width: 100%;
+  /* height: 256px; */
+  width: 65%;
+  margin: 0 auto;
 }
 .container article {
   font-family: "Roboto sans-serif";
-  color: #010209;
+  color: #9b51e0;
   font-weight: 100;
   line-height: 1.7em;
   letter-spacing: 2px;
+  /* background-color: white;s */
 }
 .square {
-  width: 306px;
+  width: 296px;
   height: 100%;
-  background-color: #dfdfdf;
-  border: 2px solid #e9e9e9;
+  border: 1px solid #e9e9e9;
   margin: 0 1.5em;
   display: flex;
   flex-direction: column;
-}
-.square p {
-  padding: 1em;
-  font-family: Roboto;
-  color: #010209;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
 }
 .squareHeader {
   background-color: #fff;
-  height: 52%;
+  height: 116px;
   overflow: hidden;
   white-space: nowrap;
   line-height: 2;
 }
-.squareHeader span {
+.squareContent {
+  background-color: #333333;
+  height: 117px;
+  padding: 1em 1em 0.5em;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+/* ---------- */
+/* -------------- */
+.square p {
+  padding: 0.5em 0;
+  font-family: Roboto;
+  color: #f2f2f2;
+}
+
+.squareHeader .squareTitle {
   display: inline-block;
   font-family: Roboto;
-  color: #415279;
-  -webkit-text-fill-color: #fff;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #415279;
+  color: #333333;
   text-transform: uppercase;
   font-size: 4em;
   text-shadow: 1px 1px 1px #919191, 1px 30px 6px rgba(16, 16, 16, 0.1);
+  padding-left: 30%;
+  /* transform: translate(1em, 0); */
+}
+.square:hover .squareTitle {
   padding-left: 100%;
-  animation: animate 12s linear infinite;
+  animation: animate 4s linear infinite;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #9b51e0;
 }
 @keyframes animate {
   0% {
@@ -112,8 +130,11 @@ body {
   }
   100% {
     transform: translate(-100%, 0);
+    padding-left: 100%;
   }
 }
+
+/* WHY ACSD */
 .whyACSD {
   justify-content: flex-end;
   align-items: center;
@@ -126,57 +147,61 @@ body {
 }
 /* SERVICES */
 .services {
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
+  width: 70%;
+  margin: 0 auto;
 }
 .services .square {
   margin: 0 auto;
+  position: relative;
 }
-/* .arrowLine {
-  position: absolute;
-  right: 0;
-  width: 100%;
-  display: block;
-  height: 1px;
-  background-color: black;
-} */
+.services article {
+  position: relative;
+  line-height: 2.5em;
+  width: 270px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
 .services article:first-child {
-  position: absolute;
-  left: 1.5em;
+  text-align: right;
 }
 .services article:last-child {
-  position: absolute;
-  right: 1.5em;
+  text-align: left;
 }
 .services article p {
-  line-height: 2.5rem;
-  text-align: right;
-  padding: 0 4px;
+  position: relative;
+  top: 8px;
 }
-.services article p::after {
-  content: "";
-  display: block;
+.squareArrow {
+  background-color: #9b51e0;
   height: 1px;
   width: 100%;
-  background-color: black;
+  display: inline-block;
   position: absolute;
+  z-index: -9;
 }
-/* first part of arrow */
-.services article:first-child p::after {
-  right: -100%;
-  border-radius: 10px;
+.services article:first-child .squareArrow:nth-of-type(1) {
+  left: 69%;
 }
-.services article:first-child p:first-child::after {
-  transform: skew(15deg, 7deg);
+.services article:first-child .squareArrow:nth-of-type(2) {
+  left: 69%;
 }
-.services article:first-child p:nth-child(2)::after {
-  transform: translateY(-22px) skewY(-5deg);
+.services article:first-child .squareArrow:nth-of-type(3) {
+  left: 36%;
 }
-.services article:first-child p:nth-child(3)::after {
-  transform: skewY(-18deg) translateY(-42px);
+.services article:last-child .squareArrow:nth-of-type(1) {
+  right: 40%;
 }
-/* second part of arrow */
-
+.services article:last-child .squareArrow:nth-of-type(2) {
+  right: 86%;
+}
+.services article:last-child .squareArrow:nth-of-type(3) {
+  right: 28%;
+  /*   */
+}
+/* ------------------------------------------- */
 /* WHY ME */
 .whyMe {
   align-items: center;

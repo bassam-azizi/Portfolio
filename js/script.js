@@ -1,3 +1,6 @@
+
+
+// Projects showroom section
 const project_slide = document.querySelector('.projects_slide');
 const project_slide_width = project_slide.offsetWidth;
 const projects_items = document.querySelectorAll('.projectItem');
