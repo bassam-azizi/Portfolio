@@ -63,51 +63,31 @@ body {
   flex-direction: row;
   position: relative;
   /* height: 256px; */
-  width: 65%;
+  width: 100%;
   margin: 0 auto;
+  height: 233px;
 }
-.container article {
-  font-family: "Roboto sans-serif";
-  color: #9b51e0;
-  font-weight: 100;
-  line-height: 1.7em;
-  letter-spacing: 2px;
-  /* background-color: white;s */
-}
+
 .square {
-  width: 296px;
-  height: 100%;
+  /* height: 100%; */
   border: 1px solid #e9e9e9;
+  background-color: #fff;
   margin: 0 1.5em;
   display: flex;
   flex-direction: column;
-  position: relative;
-  border-radius: 2px;
+  /* position: relative; */
+  border-radius: 6px;
   cursor: pointer;
+  /* background-color: rgb(109, 101, 101); */
 }
 .squareHeader {
-  background-color: #fff;
+  width: 296px;
   height: 116px;
   overflow: hidden;
   white-space: nowrap;
-  line-height: 2;
+  line-height: 1.5;
 }
-.squareContent {
-  background-color: #333333;
-  height: 117px;
-  padding: 1em 1em 0.5em;
-  line-height: 1.5em;
-  overflow: hidden;
-}
-/* ---------- */
-/* -------------- */
-.square p {
-  padding: 0.5em 0;
-  font-family: Roboto;
-  color: #f2f2f2;
-}
-
-.squareHeader .squareTitle {
+.squareTitle {
   display: inline-block;
   font-family: Roboto;
   color: #333333;
@@ -117,12 +97,52 @@ body {
   padding-left: 30%;
   /* transform: translate(1em, 0); */
 }
+.squareContent {
+  /* height: 117px; */
+  display: flex;
+  width: 296px;
+}
+.squareContent article {
+  width: 296px;
+  font-family: "new-rail-alphabet", sans-serif;
+  /* font-family: "Roboto sans-serif"; */
+  color: #9b51e0;
+  font-weight: 100;
+  line-height: 1.7em;
+  letter-spacing: 1.5px;
+  /* background-color: white;s */
+}
+.squarePitch {
+  font-family: "new-rail-alphabet", sans-serif;
+  overflow: hidden;
+  line-height: 1.4em;
+  padding: 1em 1em 0.5em;
+  background-color: #333333;
+  color: #fff;
+}
+.squarePitch p {
+  font-family: "new-rail-alphabet", sans-serif;
+  opacity: 0.5;
+}
+.square:hover .squareHeader {
+  height: 100px;
+  /* line-height: 2em; */
+}
+.square:hover .squarePitch {
+  display: none;
+}
+
+.square:hover {
+  border-color: #fff #fff #e9e9e9;
+}
+
 .square:hover .squareTitle {
   padding-left: 100%;
   animation: animate 4s linear infinite;
   -webkit-text-fill-color: #fff;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #9b51e0;
+  -webkit-text-stroke-color: #333;
+  /* -webkit-text-stroke-color: #9b51e0; */
 }
 @keyframes animate {
   0% {
@@ -149,7 +169,7 @@ body {
 .services {
   align-items: baseline;
   justify-content: center;
-  width: 70%;
+  /* width: 70%; */
   margin: 0 auto;
 }
 .services .square {
@@ -157,39 +177,49 @@ body {
   position: relative;
 }
 .services article {
-  position: relative;
+  visibility: hidden;
+  position: absolute;
+  top: 90%;
+  bottom: 1em;
   line-height: 2.5em;
-  width: 270px;
+  /* width: 270px; */
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+  /* transition: all ease 1s; */
+}
+.square:hover .squareContent article {
+  visibility: visible;
 }
 .services article:first-child {
   text-align: right;
+  right: 100%;
 }
 .services article:last-child {
-  text-align: left;
+  /* text-align: left; */
+  left: 100%;
 }
 .services article p {
   position: relative;
   top: 8px;
 }
 .squareArrow {
-  background-color: #9b51e0;
-  height: 1px;
-  width: 100%;
+  /* background-color: #9b51e0; */
+  background-color: #e9e9e9;
+  height: 0.09rem;
+  width: 130%;
   display: inline-block;
   position: absolute;
-  z-index: -9;
+  z-index: -99;
 }
 .services article:first-child .squareArrow:nth-of-type(1) {
-  left: 69%;
+  left: 79%;
 }
 .services article:first-child .squareArrow:nth-of-type(2) {
-  left: 69%;
+  left: 90%;
 }
 .services article:first-child .squareArrow:nth-of-type(3) {
-  left: 36%;
+  left: 56%;
 }
 .services article:last-child .squareArrow:nth-of-type(1) {
   right: 40%;
