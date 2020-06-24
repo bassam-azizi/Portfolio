@@ -97,12 +97,12 @@ body {
   padding-left: 30%;
   /* transform: translate(1em, 0); */
 }
-.squareContent {
-  /* height: 117px; */
+.squareElem {
+  height: 117px;
   display: flex;
   width: 296px;
 }
-.squareContent article {
+.squareElem article {
   width: 296px;
   font-family: "new-rail-alphabet", sans-serif;
   /* font-family: "Roboto sans-serif"; */
@@ -125,7 +125,7 @@ body {
   opacity: 0.5;
 }
 .square:hover .squareHeader {
-  height: 100px;
+  height: 70px;
   /* line-height: 2em; */
 }
 .square:hover .squarePitch {
