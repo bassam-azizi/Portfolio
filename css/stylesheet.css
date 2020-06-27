@@ -101,12 +101,15 @@ body {
 }
 #aboutMe .container:first-child .square:hover {
   transform: rotate(0deg);
+  z-index: 100;
 }
 #aboutMe .container:nth-child(2) .square:hover {
   transform: rotate(0deg);
+  z-index: 100;
 }
 #aboutMe .container:last-child .square:hover {
   transform: rotate(0deg);
+  z-index: 100;
 }
 .squareHeader {
   display: grid;
