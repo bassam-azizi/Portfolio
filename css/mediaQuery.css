@@ -13,3 +13,35 @@
     object-fit: contain;
   }
 }
+
+@media screen and (max-width: 800px) {
+  #aboutMe .container:nth-child(2) .square {
+    top: -120px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #aboutMe .container:nth-child(2) .square {
+    position: static;
+  }
+  #aboutMe .container:first-child {
+    justify-content: center;
+  }
+  #aboutMe .container:last-child {
+    justify-content: center;
+  }
+  #aboutMe .container:last-child .square {
+    position: static;
+    transform: rotate(-5deg);
+  }
+}
+@media screen and (max-width: 500px) {
+  #aboutMe .container:nth-child(2) {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .square {
+    width: 90%;
+    height: 240px;
+  }
+}
