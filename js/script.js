@@ -1,4 +1,10 @@
+// AboutMe section functionality
+const container = document.querySelector('.container');
+const square = document.querySelector('.square');
 
+function showContent(e) {
+    console.log(e.className);
+}
 
 // Projects showroom section
 const project_slide = document.querySelector('.projects_slide');
