@@ -52,17 +52,18 @@ body {
 
 /* THE ABOUTME SECTION */
 #aboutMe {
-  width: 90%;
-  height: 99vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin: auto;
+  position: relative;
 }
 .container {
   display: flex;
   flex-direction: row;
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -74,40 +75,40 @@ body {
   cursor: pointer;
   box-shadow: 0px 15px 41px rgba(0, 0, 0, 0.25);
 }
-#aboutMe .container:first-child {
+.whyACSD {
   justify-content: start;
 }
-#aboutMe .container:nth-child(2) {
+.services {
   justify-content: end;
 }
-#aboutMe .container:last-child {
+.whyMe {
   justify-content: center;
 }
-#aboutMe .container:first-child .square {
+.whyACSD .square {
   background-color: #2d9cdb;
   transform: rotate(7.52deg);
 }
-#aboutMe .container:nth-child(2) .square {
+.services .square {
   background-color: #f2994a;
   transform: rotate(-13.65deg);
   position: absolute;
   top: -187px;
 }
-#aboutMe .container:last-child .square {
+.whyMe .square {
   background-color: #f2c94c;
   transform: rotate(-10.03deg);
   position: absolute;
   top: 200px;
 }
-#aboutMe .container:first-child .square:hover {
+.whyACSD .square:hover {
   transform: rotate(0deg);
   z-index: 100;
 }
-#aboutMe .container:nth-child(2) .square:hover {
+.services .square:hover {
   transform: rotate(0deg);
   z-index: 100;
 }
-#aboutMe .container:last-child .square:hover {
+.whyMe .square:hover {
   transform: rotate(0deg);
   z-index: 100;
 }
@@ -135,10 +136,10 @@ body {
 }
 @keyframes animate {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translateX(-100%);
     padding-left: 100%;
   }
 }
@@ -146,6 +147,70 @@ body {
   display: grid;
   place-items: center;
   height: 50%;
+}
+
+/* __ */
+.square__modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1f1f1fae;
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+}
+.main__content article {
+  width: 307px;
+  padding: 1em 0 1em 0.6em;
+  color: white;
+  font-family: roboto;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  letter-spacing: 0.07rem;
+}
+.banner {
+  display: grid;
+  place-items: center;
+  width: 307px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 126px;
+  border-radius: 0 4px 4px 0;
+}
+.banner_title {
+  padding-left: 300px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 4em;
+  color: white;
+  animation: animate 8s linear infinite;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 9, 51);
+}
+.s1 .main__content {
+  border-left: 2px solid #2d9cdb;
+}
+.s2 .main__content {
+  border-left: 2px solid #f2994a;
+}
+.s3 .main__content {
+  border-left: 2px solid #f2c94c;
+}
+.b1 {
+  background-color: #2d9cdb;
+}
+.b2 {
+  background-color: #f2994a;
+}
+.b3 {
+  background-color: #f2c94c;
 }
 
 /* _____________-----------------------------------______________________------------------ */
