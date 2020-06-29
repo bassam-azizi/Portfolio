@@ -1,11 +1,28 @@
-// AboutMe section functionality
-const container = document.querySelector('.container');
-const square = document.querySelector('.square');
+const whyACSD = document.getElementById('whyACSD');
+const services = document.getElementById('services');
+const whyMe = document.getElementById('whyMe');
+const container_array = [whyACSD, services, whyMe];
+let modal;
 
-function showContent(e) {
-    console.log(e.className);
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// -----------------show modal function--------------
+function show__modal(e) {
+    for (let i = 0; i < container_array.length; i++) {
+        if (container_array[i].id === e.parentElement.classList[1]) {
+            modal = container_array[i];
+            modal.style.display = "grid";
+        }
+    }
 }
+// --------------hide modal function ----------------
+window.addEventListener('click', hide__modal);
 
+function hide__modal(e) {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Projects showroom section
 const project_slide = document.querySelector('.projects_slide');
 const project_slide_width = project_slide.offsetWidth;
