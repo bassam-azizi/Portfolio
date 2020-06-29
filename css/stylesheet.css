@@ -149,21 +149,24 @@ body {
   height: 50%;
 }
 
-/* __ */
+
 .square__modal {
+  display: none;
+  place-items: center;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #1f1f1fae;
-  display: grid;
-  place-items: center;
   z-index: 1000;
+  transition: all ease-in-out 4s;
+  cursor: pointer;
 }
 .main__content {
   display: flex;
   flex-direction: column;
+  cursor: auto;
 }
 .main__content article {
   width: 307px;
@@ -194,13 +197,13 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 9, 51);
 }
-.s1 .main__content {
+#whyACSD .main__content {
   border-left: 2px solid #2d9cdb;
 }
-.s2 .main__content {
+#services .main__content {
   border-left: 2px solid #f2994a;
 }
-.s3 .main__content {
+#whyMe .main__content {
   border-left: 2px solid #f2c94c;
 }
 .b1 {
