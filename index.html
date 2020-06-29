@@ -30,7 +30,7 @@
     <!-- ABOUT ME SECTION -->
     <section id="aboutMe">
       <div class="container whyACSD">
-        <div class="square">
+        <div class="square" onclick="show__modal(this);">
           <div class="squareHeader">
             <span class="squareTitle">Who's and Why ACSD?</span>
           </div>
@@ -40,19 +40,22 @@
         </div>
       </div>
       <!-- -__- -->
-      <!-- <div class="square__modal">
+      <div class="square__modal" id="whyACSD">
         <div class="main__content">
           <div class="banner b1">
             <span class="banner_title">Who's and Why ACSD?</span>
           </div>
-                <article>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit veritatis minus dolorem, optio quasi.</p>
-                </article>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit
+              veritatis minus dolorem, optio quasi.
+            </p>
+          </article>
         </div>
-      </div> -->
+      </div>
       <!-- o___o -->
       <div class="container services">
-        <div class="square" onclick="showContent(this);">
+        <div class="square" onclick="show__modal(this);">
           <div class="squareHeader">
             <span class="squareTitle">Services</span>
           </div>
@@ -62,7 +65,7 @@
         </div>
       </div>
       <!-- squareModal 2 o__o -->
-      <!-- <div class="square__modal s2">
+      <div class="square__modal" id="services">
         <div class="main__content">
           <article>
             <p>UX Design</p>
@@ -78,10 +81,10 @@
             <p>Deployment & Hosting</p>
           </article>
         </div>
-      </div> -->
+      </div>
       <!-- >>>>>>>>>>>>>>>>>>>> -->
       <div class="container whyMe">
-        <div class="square">
+        <div class="square" onclick="show__modal(this);">
           <div class="squareHeader">
             <span class="squareTitle">Why Work With Me ?</span>
           </div>
@@ -91,7 +94,7 @@
         </div>
       </div>
       <!-- Square modal 3 '__' -->
-      <div class="square__modal s3">
+      <div class="square__modal" id="whyMe">
         <div class="main__content">
           <div class="banner b3">
             <span class="banner_title">Why Work with me</span>
