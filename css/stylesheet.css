@@ -252,6 +252,8 @@ body {
 }
 .ux {
   width: 78%;
+}
+#skillsBar:hover .ux {
   animation: ux 2s;
 }
 @keyframes ux {
@@ -264,6 +266,8 @@ body {
 }
 .ui {
   width: 97%;
+}
+#skillsBar:hover .ui {
   animation: ui 2s;
 }
 @keyframes ui {
@@ -276,6 +280,8 @@ body {
 }
 .html5 {
   width: 97%;
+}
+#skillsBar:hover .html5 {
   animation: html5 2s;
 }
 @keyframes html5 {
@@ -288,6 +294,8 @@ body {
 }
 .css3 {
   width: 96%;
+}
+#skillsBar:hover .css3 {
   animation: css3 2s;
 }
 @keyframes css3 {
@@ -300,6 +308,8 @@ body {
 }
 .JavaScript {
   width: 95%;
+}
+#skillsBar:hover .JavaScript {
   animation: js 2s;
 }
 @keyframes js {
@@ -312,6 +322,8 @@ body {
 }
 .react {
   width: 94%;
+}
+#skillsBar:hover .react {
   animation: react 2s;
 }
 @keyframes react {
@@ -324,6 +336,8 @@ body {
 }
 .responsive {
   width: 91%;
+}
+#skillsBar:hover .responsive {
   animation: responsive 2s;
 }
 @keyframes responsive {
@@ -336,6 +350,8 @@ body {
 }
 .accessibility {
   width: 90%;
+}
+#skillsBar:hover .accessibility {
   animation: accessibility 2s;
 }
 @keyframes accessibility {
@@ -348,6 +364,8 @@ body {
 }
 .testing {
   width: 87%;
+}
+#skillsBar:hover .testing {
   animation: testing 2s;
 }
 @keyframes testing {
@@ -360,6 +378,8 @@ body {
 }
 .nodeJs {
   width: 60%;
+}
+#skillsBar:hover .nodeJs {
   animation: node 2s;
 }
 @keyframes node {
@@ -372,6 +392,8 @@ body {
 }
 .express {
   width: 54%;
+}
+#skillsBar:hover .express {
   animation: express 2s;
 }
 @keyframes express {
@@ -384,6 +406,8 @@ body {
 }
 .python {
   width: 69%;
+}
+#skillsBar:hover .python {
   animation: python 2s;
 }
 @keyframes python {
@@ -396,9 +420,11 @@ body {
 }
 .django {
   width: 68%;
+}
+#skillsBar:hover .django {
   animation: django 2s;
 }
-@keyframes ui {
+@keyframes django {
   0% {
     width: 0%;
   }
@@ -408,6 +434,8 @@ body {
 }
 .flask {
   width: 46%;
+}
+#skillsBar:hover .flask {
   animation: flask 2s;
 }
 @keyframes flask {
@@ -420,6 +448,8 @@ body {
 }
 .mysql {
   width: 58%;
+}
+#skillsBar:hover .mysql {
   animation: mysql 2s;
 }
 @keyframes mysql {
@@ -432,6 +462,8 @@ body {
 }
 .mongoDB {
   width: 76%;
+}
+#skillsBar:hover .mongoDB {
   animation: mongoDB 2s;
 }
 @keyframes mongoDB {
