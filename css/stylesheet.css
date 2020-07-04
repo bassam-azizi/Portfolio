@@ -216,6 +216,88 @@ body {
 .b3 {
   background-color: #f2c94c;
 }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* __________________________________    SKILLS BARS SECTION    ____________________________________  */
+#skillsBar {
+  height: 100vh;
+  width: 100%;
+  /* display: grid;
+  place-items: center; */
+}
+#skillsBar h1 {
+  text-align: center;
+}
+#skillsBar ul {
+  list-style: none;
+  line-height: 1.1em;
+  width: 500px;
+  margin: 0 auto;
+}
+#skillsBar ul li {
+  margin: 15px 0;
+}
+.bar {
+  margin-top: 7px;
+  width: 500px;
+  display: block;
+  height: 2px;
+  background-color: #f2c94c99;
+  /* background-color: #2d9cdb91; */
+}
+.bar span {
+  display: block;
+  height: 2px;
+  background-color: #f2994a;
+}
+.ux {
+  width: 78%;
+}
+.ui {
+  width: 97%;
+}
+.html5 {
+  width: 97%;
+}
+.css3 {
+  width: 96%;
+}
+.JavaScript {
+  width: 95%;
+}
+.react {
+  width: 94%;
+}
+.responsive {
+  width: 91%;
+}
+.accessibity {
+  width: 90%;
+}
+.testing {
+  width: 87%;
+}
+.nodeJs {
+  width: 60%;
+}
+.express {
+  width: 54%;
+}
+.python {
+  width: 69%;
+}
+.django {
+  width: 68%;
+}
+.flask {
+  width: 46%;
+}
+.mysql {
+  width: 58%;
+}
+.mongoDB {
+  width: 76%;
+}
 
 /* _____________-----------------------------------______________________------------------ */
 /* --------          WORKING WITH PROJECTS SECTION AND IT'S SLIDER     ---------------------*/
@@ -290,7 +372,8 @@ body {
   font-size: 4em;
   transform: translate(50%);
   cursor: pointer;
-  color: rgb(119, 153, 8);
+  /* color: rgb(119, 153, 8); */
+  color: #2d9cdb;
   font-family: "Courier New", Courier, monospace;
   z-index: 1000;
 }
