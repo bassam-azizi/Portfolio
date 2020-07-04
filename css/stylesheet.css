@@ -225,16 +225,15 @@ body {
   /* display: grid;
   place-items: center; */
 }
-#skillsBar h1 {
-  text-align: center;
-}
-#skillsBar ul {
-  list-style: none;
-  line-height: 1.1em;
+.skills__wrapper {
   width: 500px;
   margin: 0 auto;
 }
-#skillsBar ul li {
+.skills__wrapper ul {
+  list-style: none;
+  line-height: 1.1em;
+}
+.skills__wrapper ul li {
   margin: 15px 0;
 }
 .bar {
