@@ -252,51 +252,195 @@ body {
 }
 .ux {
   width: 78%;
+  animation: ux 2s;
+}
+@keyframes ux {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 78%;
+  }
 }
 .ui {
   width: 97%;
+  animation: ui 2s;
+}
+@keyframes ui {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 97%;
+  }
 }
 .html5 {
   width: 97%;
+  animation: html5 2s;
+}
+@keyframes html5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 97%;
+  }
 }
 .css3 {
   width: 96%;
+  animation: css3 2s;
+}
+@keyframes css3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 96%;
+  }
 }
 .JavaScript {
   width: 95%;
+  animation: js 2s;
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
 }
 .react {
   width: 94%;
+  animation: react 2s;
+}
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 97%;
+  }
 }
 .responsive {
   width: 91%;
+  animation: responsive 2s;
 }
-.accessibity {
+@keyframes responsive {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 91%;
+  }
+}
+.accessibility {
   width: 90%;
+  animation: accessibility 2s;
+}
+@keyframes accessibility {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
 }
 .testing {
   width: 87%;
+  animation: testing 2s;
+}
+@keyframes testing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 87%;
+  }
 }
 .nodeJs {
   width: 60%;
+  animation: node 2s;
+}
+@keyframes node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
 .express {
   width: 54%;
+  animation: express 2s;
+}
+@keyframes express {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 54%;
+  }
 }
 .python {
   width: 69%;
+  animation: python 2s;
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 69%;
+  }
 }
 .django {
   width: 68%;
+  animation: django 2s;
+}
+@keyframes ui {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 68%;
+  }
 }
 .flask {
   width: 46%;
+  animation: flask 2s;
+}
+@keyframes flask {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 46%;
+  }
 }
 .mysql {
   width: 58%;
+  animation: mysql 2s;
+}
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 58%;
+  }
 }
 .mongoDB {
   width: 76%;
+  animation: mongoDB 2s;
+}
+@keyframes mongoDB {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 76%;
+  }
 }
 
 /* _____________-----------------------------------______________________------------------ */
