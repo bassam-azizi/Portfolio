@@ -79,7 +79,7 @@ body {
   justify-content: start;
 }
 .services {
-  justify-content: end;
+  justify-content: flex-end;
 }
 .whyMe {
   justify-content: center;
