@@ -561,6 +561,15 @@ body {
   pointer-events: none;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* ---------------------------------CONTACT SECTION --------------------------------- */
+#contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;  /* default flex direction */
+}
+
 /* ___________________ FOOTER ____________________ */
 footer ul {
   list-style: none;
