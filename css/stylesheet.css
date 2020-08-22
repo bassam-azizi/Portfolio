@@ -576,10 +576,10 @@ body {
 .contact__wrapper {
   display: flex;
   flex-direction: row; /* default flex direction */
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .contact__form {
-  width: 50%;
+  width: 527px;
 }
 .contact__form form input {
   border: none;
@@ -607,8 +607,9 @@ body {
 .contact__img {
   border-radius: 100%;
   overflow: hidden;
-  width: 100px;
-  height: 100px;
+  width: 103px;
+  height: 103px;
+  border: 3px solid #219653;
 }
 .contact__img img {
   position: relative;
