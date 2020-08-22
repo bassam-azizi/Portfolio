@@ -259,9 +259,9 @@
       <!-- <div id="iconify"> -->
     </section>
     <section id="contact">
-      <h3>Let's Talk</h3>
       <div class="contact__wrapper">
         <div class="contact__form">
+          <h3>Let's Talk</h3>
           <div class="contact__header">
             <div class="contact__img"><img src="assets/k.jpg" alt="contact image" /></div>
             <span>__Bassem Azizi</span>
@@ -270,16 +270,21 @@
               <input class="name" name="name" placeholder="name" />
               <input class="mail" name="mail" placeholder="adress mail" />
               <input class="message" name="message" placeholder="message" />
-              <input class="submit" name="submit" type="button" placeholder="submit" />
+              <!-- <input id="contact_submit" class="submit" name="submit" type="submit" value="submit"> -->
+              <button id="contact_submit">Submit</button>
           </form>
         </div>
         <div id="links">
-          <a href="" id="profile-link"><img src="assets/linkedin.jpg" alt="linkedin social media icon"/></a>
-          <a href="" id="profile-link"><img src="assets/github.jpg" alt="github social media icon"/></a>
-          <a href="" id="profile-link"><img src="assets/twitter.jpg" alt="twitter social media icon"/></a>
-          <a href="" id="profile-link"><img src="assets/instagram.jpg" alt="instagram social media icon"/></a>
-          <a href="" id="profile-link"><img src="assets/phone.jpg" alt="phone social media icon"/></a>
-          <a href="" id="profile-link"><img src="assets/mail.jpg" alt="mail social media icon"/></a>
+          <div class="flex_vertical">
+            <a href="" id="profile-link"><img src="assets/linkedin.jpg" alt="linkedin social media icon"/></a>
+            <a href="" id="profile-link"><img src="assets/github.jpg" alt="github social media icon"/></a>
+            <a href="" id="profile-link"><img src="assets/twitter.jpg" alt="twitter social media icon"/></a>
+          </div>
+          <div class="flex_horizental">
+            <a href="" id="profile-link"><img src="assets/instagram.jpg" alt="instagram social media icon"/></a>
+            <a href="" id="profile-link"><img src="assets/phone.jpg" alt="phone social media icon"/></a>
+            <a href="" id="profile-link"><img src="assets/mail.jpg" alt="mail social media icon"/></a>
+          </div>
         </div>
 
       </div>
