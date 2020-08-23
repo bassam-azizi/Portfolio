@@ -91,7 +91,6 @@ function slide_left() {
         document.querySelector('.right').style.pointerEvents = "auto";
     }
     if (parseInt(project_slide.style.left) == 0) {
-        console.log('tgh');
         document.querySelector('.left').style.opacity = ".4";
         document.querySelector('.left').style.pointerEvents = "none";
     }
@@ -99,8 +98,25 @@ function slide_left() {
 }
 // leftArrow.addEventListener('click', slide_left, false);
 
-
-
 window.onload = load();
+
+// ___________ CONTACT FORM TEXTAREA 'S HEIGHT AUTO EXPAND ______________
+// TextArea Element stored in a variable
+let textArea = document.getElementById("textArea");
+
+// we attach to it an event listener that launch a function when user start typing
+textArea.addEventListener('keydown', autoExpand);
+
+
+function autoExpand() {
+    // This is belong to the function's owner which in this case is the textarea element
+    let te = this;
+    // We use setTimeout so the function always compare and happen repetitevly 
+    setTimeout(function () {
+        te.style.cssText = "height:" + te.scrollHeight + 'px';
+    }, 0);
+}
+
+
 
 
