@@ -97,10 +97,23 @@ function slide_left() {
     // 
 }
 // leftArrow.addEventListener('click', slide_left, false);
-
 window.onload = load();
 
-// ___________ CONTACT FORM TEXTAREA 'S HEIGHT AUTO EXPAND ______________
+// ___________ CONTACT FORM LABEL SETTED ASIDE WHEN THERE'S CONTENT OR TEXT INSIDE INPUTS
+let name = document.getElementById('name');
+let l_name = document.getElementById('l_name');
+if (name.value != "") {
+    l_name.style.cssText = "left: -4.5em;color: #219653;"
+}
+// Second groupe
+let email = document.getElementById('email');
+let l_email = document.getElementById('l_email');
+if (email.value != "") {
+    l_email.style.cssText = "left: -4.5em; color:#219653;"
+}
+
+// ___________  CONTACT FORM TEXTAREA 'S HEIGHT AUTO EXPAND  ______________
+
 // TextArea Element stored in a variable
 let textArea = document.getElementById("textArea");
 
