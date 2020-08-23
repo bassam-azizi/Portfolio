@@ -607,13 +607,29 @@ body {
 /*  The contact form elements */
 .contact__form {
   width: 527px;
+  font-size: 14px;
 }
+/* .contact__form form ::placeholder {
+  font-size: 14px;
+  color: #0f0f0f;
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: none;
+} */
 .contact__form form input {
   border: none;
   display: block;
   width: 100%;
   padding: 1.52em;
   border-bottom: 1px solid #4f4f4f49;
+}
+.contact__form form textarea {
+  border: none;
+  resize: none;
+  display: block;
+  padding: 1.52em 1.52em 1.52em;
+  border-bottom: 1px solid #4f4f4f49;
+  width: 100%;
 }
 #contact_submit {
   padding: 0.2em 0.9em;
@@ -644,6 +660,10 @@ body {
   margin: 1em;
 }
 /* ___________________ FOOTER ____________________ */
+footer {
+  position: relative;
+  bottom: 0;
+}
 footer ul {
   list-style: none;
   float: right;
