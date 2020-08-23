@@ -571,13 +571,40 @@ body {
   font-size: 36px;
   display: block;
   text-align: left;
-  text-indent: 0.4em;
+  text-indent: 0.6em;
 }
 .contact__wrapper {
   display: flex;
   flex-direction: row; /* default flex direction */
   justify-content: space-evenly;
 }
+.contact__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3em 0;
+}
+.contact__img {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 103px;
+  height: 103px;
+  border: 3px solid #219653;
+}
+.contact__img img {
+  position: relative;
+  right: 10px;
+  width: 120px;
+}
+.contact__header span {
+  align-self: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  text-indent: 1rem;
+  letter-spacing: 1px;
+}
+/*  The contact form elements */
 .contact__form {
   width: 527px;
 }
@@ -596,28 +623,8 @@ body {
   height: 60px;
   border-radius: 200px;
   cursor: pointer;
-  margin-top: 2em;
+  margin-top: 3.5em;
   border: none;
-}
-.contact__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.contact__img {
-  border-radius: 100%;
-  overflow: hidden;
-  width: 103px;
-  height: 103px;
-  border: 3px solid #219653;
-}
-.contact__img img {
-  position: relative;
-  right: 10px;
-  width: 120px;
-}
-.contact__header span {
-  align-self: center;
 }
 #links {
   display: flex;
@@ -634,6 +641,7 @@ body {
 }
 #profile-link img {
   width: 100px;
+  margin: 1em;
 }
 /* ___________________ FOOTER ____________________ */
 footer ul {
