@@ -100,17 +100,29 @@ function slide_left() {
 window.onload = load();
 
 // ___________ CONTACT FORM LABEL SETTED ASIDE WHEN THERE'S CONTENT OR TEXT INSIDE INPUTS
-let name = document.getElementById('name');
-let l_name = document.getElementById('l_name');
-if (name.value != "") {
-    l_name.style.cssText = "left: -4.5em;color: #219653;"
+// let name = document.getElementById('name');
+// let l_name = document.getElementById('l_name');
+// let email = document.getElementById('email');
+// let l_email = document.getElementById('l_email');
+let input_cl = document.querySelectorAll('form_input');
+let input = Array.from('input_cl');
+// input.forEach(i.addEventListener('keydown', label_pos));
+for (let i = 0; i < input.length; i++) {
+    input[i].addEventListener('keydown', place_label)
 }
-// Second groupe
-let email = document.getElementById('email');
-let l_email = document.getElementById('l_email');
-if (email.value != "") {
-    l_email.style.cssText = "left: -4.5em; color:#219653;"
+
+function place_label() {
+    let el = "this"
+    console.log(el);
+    if (el != "") el.nextSibling.style.cssText = "left: -4.5em;color: #219653;"
 }
+
+// if (name.value != "") {
+//     l_name.style.cssText = "left: -4.5em;color: #219653;"
+// }
+// if (email.value != "") {
+//     l_email.style.cssText = "left: -4.5em; color:#219653;"
+// }
 
 // ___________  CONTACT FORM TEXTAREA 'S HEIGHT AUTO EXPAND  ______________
 
