@@ -609,13 +609,13 @@ body {
   width: 527px;
   font-size: 14px;
 }
-/* .contact__form form ::placeholder {
+.contact__form form ::placeholder {
   font-size: 14px;
   color: #0f0f0f;
   font-family: Roboto;
   font-weight: 500;
   font-style: none;
-} */
+}
 .contact__form form input {
   border: none;
   display: block;
@@ -630,6 +630,8 @@ body {
   padding: 1.52em 1.52em 1.52em;
   border-bottom: 1px solid #4f4f4f49;
   width: 100%;
+  overflow: hidden;
+  scrollbar-width: 0;
 }
 #contact_submit {
   padding: 0.2em 0.9em;
