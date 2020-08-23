@@ -622,15 +622,25 @@ body {
   /* font-size: 14px;
   font-family: Roboto; */
 }
+.form_input:focus + label {
+  /* top: 0.2em; */
+  left: -4.5em;
+  color: #219653;
+}
+/* #name:focus + #l_name{
+
+}
 #textArea:focus + #l_textArea {
   position: static;
-}
+  color: red;
+} */
 .contact__form form input {
   border: none;
   display: block;
   width: 100%;
   padding: 1.52em;
   border-bottom: 1px solid #4f4f4f49;
+  outline: none;
 }
 .contact__form form textarea {
   border: none;
