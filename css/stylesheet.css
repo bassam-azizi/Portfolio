@@ -609,12 +609,21 @@ body {
   width: 527px;
   font-size: 14px;
 }
-.contact__form form ::placeholder {
-  font-size: 14px;
+.formGroup {
+  position: relative;
+}
+.formLabels {
+  position: absolute;
+  top: 1.3em;
+  left: 1.5em;
   color: #0f0f0f;
-  font-family: Roboto;
   font-weight: 500;
-  font-style: none;
+  font-style: normal;
+  /* font-size: 14px;
+  font-family: Roboto; */
+}
+#textArea:focus + #l_textArea {
+  position: static;
 }
 .contact__form form input {
   border: none;
