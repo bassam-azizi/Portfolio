@@ -267,10 +267,19 @@
             <span> Bassem Azizi</span>
           </div>
           <form>
-              <input name="name" placeholder="Full Name" />
-              <input name="mail" placeholder="Email Adress" />
+            <div class="formGroup">
+              <label id="l_name" class="formLabels" for="name">Full Name</label>
+              <input id="Name" name="name"/>
+            </div>
+            <div class="formGroup">
+              <label class="formLabels" for="email">Email Adress</label>
+              <input name="mail" />
+            </div>
               <!-- <input name="message" placeholder="Message" type="text" /> -->
-              <textarea id="textArea" name="comment" placeholder="Message" rows="1"></textarea>
+            <div class="formGroup">
+              <label id="l_textArea" class="formLabels" for="textArea">Message</label>
+              <textarea id="textArea" name="comment" rows="1"></textarea>
+            </div>
               <!-- <input id="contact_submit" class="submit" name="submit" type="submit" value="submit"> -->
               <button id="contact_submit">Submit</button>
           </form>
@@ -289,12 +298,12 @@
         </div>
 
       </div>
-          <footer>
+          <!-- <footer>
             <ul>
               <li>Privacy</li>
               <li>All right are reserved</li>
             </ul>
-          </footer>
+          </footer> -->
     </section>
     <script src="js/script.js"></script>
   </body>
