@@ -268,17 +268,17 @@
           </div>
           <form>
             <div class="formGroup">
+              <input class="form_input" id="name" name="name" required/>
               <label id="l_name" class="formLabels" for="name">Full Name</label>
-              <input id="Name" name="name"/>
             </div>
             <div class="formGroup">
-              <label class="formLabels" for="email">Email Adress</label>
-              <input name="mail" />
+              <input class="form_input" id="email" name="mail"  required/>
+              <label id="l_email" class="formLabels" for="email">Email Adress</label>
             </div>
               <!-- <input name="message" placeholder="Message" type="text" /> -->
             <div class="formGroup">
+              <textarea class="form_input" id="textArea" name="comment" rows="1"></textarea>
               <label id="l_textArea" class="formLabels" for="textArea">Message</label>
-              <textarea id="textArea" name="comment" rows="1"></textarea>
             </div>
               <!-- <input id="contact_submit" class="submit" name="submit" type="submit" value="submit"> -->
               <button id="contact_submit">Submit</button>
