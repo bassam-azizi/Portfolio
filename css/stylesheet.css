@@ -623,17 +623,15 @@ body {
   font-family: Roboto; */
 }
 .form_input:focus + label {
-  /* top: 0.2em; */
-  left: -4.5em;
+  top: 0;
   color: #219653;
+  font-weight: 500;
 }
-/* #name:focus + #l_name{
+.form_input:required {
+  box-shadow: none;
+  box-shadow: 1px solid #e22;
+}
 
-}
-#textArea:focus + #l_textArea {
-  position: static;
-  color: red;
-} */
 .contact__form form input {
   border: none;
   display: block;
@@ -651,6 +649,7 @@ body {
   width: 100%;
   overflow: hidden;
   scrollbar-width: 0;
+  outline: none;
 }
 #contact_submit {
   padding: 0.2em 0.9em;
