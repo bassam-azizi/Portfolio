@@ -103,12 +103,17 @@ window.onload = load();
 let input_cl = document.querySelectorAll('.form_input');
 let input = Array.from(input_cl);
 for (let i = 0; i < input.length; i++) {
+    // remove the content inside the input so when refresh happen, the input are empty
+    input[i].value = "";
     input[i].addEventListener('keydown', place_label)
 }
 
 function place_label() {
     let el = this;
-    if (el != "") el.parentElement.children[1].style.cssText = "left: -4.5em;color: #219653;"
+    if (el != "") {
+        el.parentElement.style.cssText = "padding: 1em";
+        el.parentElement.children[1].style.cssText = "top:0; color: #219653;"
+    }
 }
 
 
